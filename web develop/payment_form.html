@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="sty
+    les.css">
+</head>
+
+<body>
+    <form action="">
+        <h1>Payment Form <img src="https://www.aaditritechnology.com/images/mobile_payment.gif" alt="" width="80px" height="35"></h1>
+        <h2>Contact Information</h2>
+        <h4>Mandatory sign *</h4>
+        <p>Name:* <input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender<img src="https://previews.123rf.com/images/tatianasun/tatianasun1805/tatianasun180500043/100874053-man-and-woman-avatar-profile-in-flat-design-male-and-female-face-icon-vector-color-illustration-.jpg" alt="" width="40"></legend>
+            <p>
+                <label for="genderida">
+                    <input type="radio" value="gender a" name="gender" id="genderida">Male
+                </label>
+                <label for="genderidb">
+                    <input type="radio" value="gender b" name="gender" id="genderidb">Female
+                </label>
+                <label for="genderidc">
+                    <input type="radio" value="gender c" name="gender" id="genderidc">Other
+                </label>
+            </p>
+        </fieldset>
+        <P>Address: <textarea name="address" id="address" cols="100" rows="10" placeholder=" Fill your current address"></textarea></P>
+        <p>Email✉️:* <input type="email" name="email" id="email"></p>
+        <P>phone📞: <input type="number" name="number" id="number"></P>
+        <h2>Payment Information💳</h2>
+        <P>Card type*:
+            <select name="card_type" id="card_type" required>
+                <option value="">--select a card--</option>
+                <option value="visa">Visa💳</option>
+                <option value="rupay">Rupay💱</option>
+                <option value="mastercard">Master card💳</option>
+            </select>
+        </P>
+
+        <p>Card Number * <img src="https://cdn.cssauthor.com/wp-content/uploads/2019/05/Essential-Minimal-Payment-Icons.jpg?strip=all&lossy=1&resize=1000%2C500&ssl=1" alt="" width="50"> <input type="number" name="card_number " id="card_number" required>
+        </p>
+
+        <p>
+            Expiration Date *: <input type="date" name="exp_date" id="exp_date" required>
+        </p>
+
+        <p>CVV* <input type="password" name="cvv" id="cvv" required></p>
+        <input type="Submit" value="Pay now">
+
+    </form>
+</body>
+
+</html>
